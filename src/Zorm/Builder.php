@@ -113,7 +113,7 @@ class Builder
 
         $cn = get_class($this->model);
 
-        return $this->fillMany($all, new $cn());
+        return $this->fillMany($all, new $cn($this->config));
     }
 
     /**
